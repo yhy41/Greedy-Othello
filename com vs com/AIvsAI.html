@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1">
+	<title>Game Othello</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="AI.css" rel="stylesheet" type="text/css" />
+    <link href="interface.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<div id="container">
+    <div id="errors"><span></span></div>
+    <div id="game-header">
+        <span id="nama-game">Game-Othello</span>
+        <span id="score-player1">0</span>
+        <span id="score-player2">0</span>
+        <a  id="pass-button">AI VS AI</a>
+        <br/>
+        <span class="option">
+  				<label>P1</label>
+  				<div id="control-p1" class="switch">
+  					<span class="switch-slide">
+  						<span class="switch-slide-label-on">ON</span>
+  						<span class="switch-slide-toggle"></span>
+  						<span class="switch-slide-label-off">OFF</span>
+  					</span>
+  				</div>
+  			</span>
+        <span class="option">
+  				<label>P2</label>
+  				<div id="control-p2" class="switch">
+  					<span class="switch-slide">
+  						<span class="switch-slide-label-on">ON</span>
+  						<span class="switch-slide-toggle"></span>
+  						<span class="switch-slide-label-off">OFF</span>
+  					</span>
+  				</div>
+  			</span>
+        <div id="messages"></div>
+      </div>
+      <div id="game-container">
+        <!-- papan permainan -->
+        <div id="papan"></div>  
+      </div>
+    </div>
+
+    <script src="coba.js"></script>
+    <script>
+      // Start'er up!
+		OT.Konstruktor();
+    </script>
+    <script src="interface.js"></script>
+
+</body>
+</html>
